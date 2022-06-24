@@ -1,0 +1,9 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.myForm-container{
+    display:grid;
+    place-items: center;
+}

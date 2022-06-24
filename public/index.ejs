@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Weather SMS</title>
+</head>
+<body>
+    <div class="myForm-container">
+        <h2>Daily Weather SMS</h2>
+        <div class="myForm">
+            <form method="post" action="/register" enctype="multipart/form-data">
+                <label for="phoneNo">Enter Phone Number: </label>
+                <input type="tel" id="phoneNo" name="phoneNo" pattern="[0-9]{8}" placeholder="81111111">
+                <input type="submit" value="Register">
+            </form>
+            <% if(typeof(message) != "undefined") {%> 
+                <div class="serverMsg"><%= message %></div>
+            <% } %> 
+        </div>
+    </div>
+</body>
+</html>
